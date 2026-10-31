@@ -10,16 +10,16 @@ export function ThemeToggle() {
 
   return (
     <Toggle
-      pressed={theme === "dark"}
+      pressed={theme === "light"}
       onPressedChange={toggleTheme}
       aria-label="Toggle theme"
       variant="outline"
       size="default"
     >
       {theme === "dark" ? (
-        <Moon className="h-4 w-4" />
-      ) : (
         <Sun className="h-4 w-4" />
+      ) : (
+        <Moon className="h-4 w-4" />
       )}
     </Toggle>
   );
